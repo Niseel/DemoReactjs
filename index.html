@@ -8,9 +8,17 @@
   <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
   <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
   <script>
-    const content = React.createElement('div', null, 'Xin chao');
+    const app = React.createElement('div', {
+        className: 'app'
+      }, 'Xin chao');
+    const play = React.createElement('p', {
+        className: 'sudo'
+      }, 'This is game');
+    const game = React.createElement('div', {
+        className: 'game'
+      }, app, play);
     const root = document.getElementById('root');
-    ReactDOM.render(content, root);
+    ReactDOM.render(game, root);
   </script>
 </body>
 </html>
