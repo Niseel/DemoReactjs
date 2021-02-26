@@ -7,10 +7,11 @@
   <div id="root"></div>
   <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
   <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
-  <script>
-    const app = React.createElement('div', {
-        className: 'app'
-      }, 'Xin chao');
+  <!-- Babel to translate html to React component -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <script type="text/babel">
+    const app = <div class="app">Xin chao Viet Nam</div>
     const play = React.createElement('p', {
         className: 'sudo'
       }, 'This is game');
